@@ -33,6 +33,7 @@
             lbPassword = new Label();
             txtPassword = new TextBox();
             btnLogin = new Button();
+            linkLabel1 = new LinkLabel();
             SuspendLayout();
             // 
             // txtUsername
@@ -78,11 +79,23 @@
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            linkLabel1.Location = new Point(210, 212);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(114, 20);
+            linkLabel1.TabIndex = 5;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Quên mật khẩu?";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(linkLabel1);
             Controls.Add(btnLogin);
             Controls.Add(lbPassword);
             Controls.Add(txtPassword);
@@ -101,5 +114,6 @@
         private Label lbPassword;
         private TextBox txtPassword;
         private Button btnLogin;
+        private LinkLabel linkLabel1;
     }
 }
